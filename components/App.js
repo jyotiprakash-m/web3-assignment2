@@ -57,18 +57,6 @@ const App = ({ accessToken }) => {
                 console.log(error)
             });
 
-
-        // axios.post("/api/user/register", values).then(response => {
-        //     console.log(response.data);
-        // }).then(() => {
-        //     axios.get(`/api/user/email/${loggedInUserInfo?.email}`)
-        //         .then((response) => {
-        //             setUserInfo(response.data.user)
-        //             setIsModalOpen(false)
-        //         }).catch(err => {
-        //             console.log(err);
-        //         })
-        // })
     };
 
     const onFinishFailed = (errorInfo) => {
@@ -121,18 +109,6 @@ const App = ({ accessToken }) => {
                     .catch(err => {
                         console.log(err);
                     });
-
-                // axios.get(`/api/user/email/${loggedInUserInfo?.email}`)
-                //     .then((response) => {
-                //         if (response.data.user === null) {
-                //             showModal()
-                //         } else {
-                //             setUserInfo(response.data.user)
-                //         }
-                //     }).catch(err => {
-                //         console.log(err);
-                //     })
-
             }
         }
         getUserByEmailId();

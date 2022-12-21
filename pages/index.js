@@ -1,6 +1,6 @@
 import dynamic from "next/dynamic";
 import 'antd/dist/antd.css';
-import { accessToken } from '../utils/protector';
+
 const App = dynamic(
   () => {
     return import("../components/App");
@@ -13,7 +13,7 @@ const Home = ({ accessToken }) => {
 }
 
 const getServerSideProps = async () => {
-  return { props: { accessToken } };
+  return { props: { accessToken: process.env.TOKEN_KEY } };
 };
 export default Home
 export { getServerSideProps };

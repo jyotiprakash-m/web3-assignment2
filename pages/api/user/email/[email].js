@@ -4,6 +4,7 @@ import { checkToken } from '../../../../utils/protector';
 
 export default async function handler(req, res) {
     if (!checkToken(req)) return res.status(403).send();
+    console.log(req);
     const { email } = req.query
     try {
         await connectMongo();
