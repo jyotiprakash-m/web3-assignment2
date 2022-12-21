@@ -45,4 +45,4 @@ $ npm run dev
 ## Live on
 I host this application on vercel.com .
 
-> [https://web3auth-assignment.vercel.app](https://web3auth-assignment.vercel.app)
+> [http://web3-assignment2.vercel.app](http://web3-assignment2.vercel.app)
